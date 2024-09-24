@@ -1,0 +1,16 @@
+.f-reverse {
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .f-reverse {
+        margin-left: 0; /* No margin on smaller screens */
+        margin-top: 0;
+    }
+}
+@media (min-width: 1024px) {
+    .col-md-6.p-0.d-flex.align-items-center.justify-content-center {
+      align-items: center !important;
+    }
+  }

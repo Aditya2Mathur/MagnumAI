@@ -1,0 +1,182 @@
+/* Base styles for the footer */
+.footer-container {
+  background-color: rgb(32, 110, 85);
+  padding: 50px 0;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.footer-section {
+  margin-top: 50px;
+}
+
+.text-light {
+  color: #fff;
+}
+
+.by-beyond {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.address-box {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 30px;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+@media (max-width: 768px) {
+  .address-box {
+    margin: 0 auto;        /* Center the div horizontally */
+    text-align: center;    /* Center the text inside the box */
+    display: block;   
+    font-size: 16px;     /* Ensure the div takes up the full width */
+  }
+}
+
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-box {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.talk-btn {
+  border: none;
+  border-radius: 40px;
+  background-color: #6366f1;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .talk-btn {
+    display: block;        /* Make the button take full width */
+    margin: 0 auto;        /* Auto margins will center it */
+    text-align: center;    /* Center the text inside the button */
+  }
+
+  .disclaimer {
+    text-align: center;    /* Center the disclaimer text on smaller screens */
+  }
+}
+
+
+.disclaimer {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.social-section {
+  margin-top: 50px;
+}
+
+.made-india {
+  margin-top: 50px;
+}
+
+.terms-privacy {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.terms-privacy span {
+  margin-left: 20px;
+  color: #70e6c0;
+  font-size: 14px;
+}
+
+.developer-info {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  color: #fff;
+}
+
+.developer-info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .address-box,
+  .contact-box {
+    font-size: 20px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .footer-info,
+  .footer-action {
+    text-align: center;
+  }
+
+  .terms-privacy {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .address-box,
+  .contact-box {
+    font-size: 10px;
+    text-align: center;
+  }
+  
+
+  .footer-info,
+  .footer-action {
+    text-align: center;
+  }
+
+  .terms-privacy {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .terms-privacy span {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .center-text {
+    text-align: center;   /* Center the text content */
+    margin: 0 auto;       /* Center the div horizontally */
+  }
+}
+@media (max-width: 768px) {
+  .social-section {
+    text-align: center;    /* Center the icons within the container */
+  }
+
+  .social-section .col {
+    display: inline-block; /* Makes the columns stack horizontally */
+    width: auto;           /* Remove the default column width */
+  }
+}
+

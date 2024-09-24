@@ -1,0 +1,311 @@
+/* Ensure container margins and paddings are consistent across devices */
+.home-content, .container-fluid {
+  padding: 0 15px;
+}
+
+/* Center text and align items properly */
+.text-center {
+  text-align: center;
+}
+
+/* Ensure that all images are responsive and maintain aspect ratio */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the button to be responsive */
+.toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-family: inherit;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.collapse-content {
+  display: none;
+}
+
+.collapse-content.show {
+  display: block;
+}
+
+/* Margin and padding adjustments */
+.row {
+  margin: 0;
+}
+
+.col-md-6, .col-md-4, .col-md-5, .col-sm-12 {
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 24px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px;
+  }
+  
+  .benchmark-text {
+    font-size: 18px;
+  }
+  
+  .display-5 {
+    font-size: 24px;
+  }
+  
+  .fs-1 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+  
+  .benchmark-text {
+    font-size: 20px;
+  }
+  
+  .display-5 {
+    font-size: 36px;
+  }
+  
+  .fs-1 {
+    font-size: 48px;
+  }
+}
+
+.benchmark-section {
+  margin-top: 100px;
+}
+
+.footer-button {
+  width: 150px;
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  .footer-button {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .footer-developer-link {
+    font-size: 12px;
+  }
+}
+/* Style the toggle button to remove underlines and maintain spacing */
+.toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-family: inherit;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-bottom: 15px; /* Add margin between toggle buttons */
+  text-decoration: none; /* Ensure no underline */
+}
+
+/* Ensure the toggle icon size is appropriate */
+.toggle-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Manage the visibility of collapsible content */
+.collapse-content {
+  display: none;
+}
+
+.collapse-content.show {
+  display: block;
+}
+
+.collapse-content.hide {
+  display: none;
+}
+
+/* Adjust margins and padding for various screen sizes */
+.row {
+  margin: 0;
+}
+
+.col-md-6, .col-md-4, .col-md-5, .col-sm-12 {
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 24px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px;
+  }
+  
+  .benchmark-text {
+    font-size: 18px;
+  }
+  
+  .display-5 {
+    font-size: 24px;
+  }
+  
+  .fs-1 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+  
+  .benchmark-text {
+    font-size: 20px;
+  }
+  
+  .display-5 {
+    font-size: 36px;
+  }
+  
+  .fs-1 {
+    font-size: 48px;
+  }
+}
+
+.benchmark-section {
+  margin-top: 100px;
+}
+
+.footer-button {
+  width: 150px;
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  .footer-button {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .footer-developer-link {
+    font-size: 12px;
+  }
+}
+/* Home.css */
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  align-items: stretch; /* Ensures both columns have the same height */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.col-md-5,
+.col-sm-4 {
+  flex: 1; /* Ensure both columns take equal space */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove padding */
+}
+
+img {
+  max-width: 100%;
+  height: 450;
+}
+
+.text-md-start {
+  margin-top: 0;
+}
+
+.p-4 {
+  padding: 0 !important; /* Ensure no padding in right column */
+}
+
+.toggle-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.collapse-content {
+  display: none;
+}
+
+.collapse-content.show {
+  display: block;
+}
+
+/* Remove margin from other containers below this */
+.connected-container {
+  margin: 0;
+  padding: 0;
+}
+.video-section {
+  
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.video-responsive {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .video-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .video-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+}
