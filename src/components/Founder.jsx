@@ -1,14 +1,14 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ContentSwitcher = () => {
   // Array of content with headings, text, and images
   return (
     <div style={{ marginTop: '100px', backgroundColor: '#A5B4FC' }} >
-      <div className="row justify-content-center">
-       
-        
-        <div className="col-sm-10">
-          <div className="row" >
-            <div className="col-sm-5" style={{height: '400px'}}> 
+      <div className="">
+        <div className="row p-0 m-0">
+          <div className="row g-0 d-flex flex-sm-row-reverse flex-md-row" >
+            {/* left */}
+            <div className="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center align-items-end" style={{height: '400px'}}> 
               <div className="row fw-bold text-start" style={{ color: '#5c42fc', fontSize: '16px' }}>
                 <p>Goode Doctor Technology</p> {/* Dynamic heading */}
               </div>
@@ -16,7 +16,8 @@ const ContentSwitcher = () => {
                 <p>At Good Doctor, we are committed to building a robust digital healthcare ecosystem connecting medical professionals with patients, to deliver high-quality health services. Deploying a conversational AI-powered solution enabled by Yellow.ai allows us to seamlessly engage with 700+ patients 24/7 on their preferred channels like WhatsApp. The aim is to improve accessibility of healthcare without being constrained by time and geographic boundaries</p> {/* Dynamic text */}
               </div>
             </div>
-            <div className="col-sm-7 d-flex justify-content-center align-items-center" style={{height: '400px'}}>
+            {/* right */}
+            <div className="col-lg-5 col-md-6 d-flex justify-content-center align-items-md-center align-items-sm-start align-items-xs-start" style={{height: '400px'}}>
               <img
                 src="https://yellow.ai/wp-content/uploads/2023/04/testimonial-sit.webp" // Dynamic image
                 alt="Dynamic Content"
@@ -30,9 +31,7 @@ const ContentSwitcher = () => {
               />
             </div>   
           </div>
-        </div>
-
-        
+        </div>  
       </div>
     </div>
   );
