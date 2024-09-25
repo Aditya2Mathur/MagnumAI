@@ -5,6 +5,7 @@ import feature4_2 from "./assets/feature4_2.png"
 import feature4_3 from "./assets/feature4_3.png"
 import plus from './assets/plus.svg'
 import minus from './assets/minus.svg'
+import "./Feature3.css"
 
 export default function Feature() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -54,9 +55,9 @@ export default function Feature() {
         <div className="col-md-12 col-lg-6 col-sm-12 p-0 order-lg-1 order-md-1">
           <div className="row f-reverse m-auto">
             <div className="col-sm-12 col-md-12">
-              <h3>Track Your Meals with a Simple Photo</h3>
+              <h3>Track <span className='color-5'>Your Meals</span> with a Simple Photo</h3>
               <p className="mt-4">
-                Snap a photo of your meal, upload it, and get instant feedback on what you're eating. Our AI helps you understand your food’s nutritional value, offering personalized advice for healthier eating habits.
+                Snap a photo of your meal, upload it, and <span className='color-5'>get instant feedback</span> on what you're eating. Our AI helps you understand <span className='color-5'>your food’s nutritional value</span>, offering personalized advice for healthier eating habits.
               </p>
             </div>
             <div className="col-md-12 col-lg-12 mt-3">

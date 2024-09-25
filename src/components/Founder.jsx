@@ -10,7 +10,7 @@ const ContentSwitcher = () => {
             {/* left */}
             <div className="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center align-items-end" style={{height: '400px'}}> 
               <div className="row fw-bold text-start color-5" style={{fontSize: '16px' }}>
-                <p>Goode Doctor Technology</p> {/* Dynamic heading */}
+                <p className='color-5'>Goode Doctor Technology</p> {/* Dynamic heading */}
               </div>
               <div className="row text-align-justify text-start color-3">
                 <p>At Good Doctor, we are committed to building a robust digital healthcare ecosystem connecting medical professionals with patients, to deliver high-quality health services. Deploying a conversational AI-powered solution enabled by Yellow.ai allows us to seamlessly engage with 700+ patients 24/7 on their preferred channels like WhatsApp. The aim is to improve accessibility of healthcare without being constrained by time and geographic boundaries</p> {/* Dynamic text */}

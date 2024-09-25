@@ -55,9 +55,9 @@ export default function Feature() {
         <div className="col-md-12 col-lg-6 col-sm-12 p-0 order-lg-1 order-md-1">
           <div className="row f-reverse m-auto " >
             <div className="col-sm-12 col-md-12">
-              <h3>Voice Chat: Speak Your Health Concerns with Ease</h3>
+              <h3>Voice Chat: Speak Your <span className='color-5'>Health Concerns</span> with Ease</h3>
               <p className="mt-4">
-                Our voice chat feature allows you to communicate your health issues via voice messages in any language. Designed specifically for people who may have trouble writing, it ensures that everyone, including people in rural areas, can access quality healthcare advice.
+                Our voice chat feature allows you to communicate your health issues via voice messages in any language. <span className='color-5'>Designed specifically for people</span> who may have trouble writing, it ensures that everyone, including people in rural areas, can <span className='color-5'>access quality healthcare</span> advice.
               </p>
             </div>
             <div className="col-md-12 col-lg-12 mt-3">

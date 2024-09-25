@@ -56,9 +56,9 @@ export default function Feature() {
         <div className="col-md-12 col-lg-6 col-sm-12 p-0">
           <div className="row mt-5 ">
             <div className="col-sm-12 col-md-12 color-3">
-            <h3>AI-Powered Health Chatbot: Instant Support for Your Health Needs</h3>
+            <h3>AI-Powered Health Chatbot: <span className='color-5'>Instant Support</span> for Your Health Needs</h3>
               <p className="mt-4">
-              Our AI-driven health chatbot is here to help you manage any health concern. Whether it’s answering your questions, guiding you to the right our chatbot ensures you get the assistance you need quickly and efficiently.
+              Our AI-driven health <span className='color-5 '>chatbot is here to help</span> you manage any health concern. Whether it’s answering <span>your questions, guiding you</span> to the right our chatbot ensures <span className='color-5'>you get the assistance you</span> need quickly and efficiently.
               </p>
             </div>
             <div className="col-md-12 col-lg-12 mt-3">

@@ -15,7 +15,7 @@ export default function MyComponent() {
         </div>
         {/* Hide this column on screen sizes below 576px */}
         <div className="col-sm-4 d-none d-sm-flex justify-content-center align-items-center">
-          <button className='rounded-pill py-2 px-3 text-light fw-bold d-none d-md-block' style={{ backgroundColor: '#6366F1', border: 'none' }}>
+          <button className='rounded-pill py-2 px-3 fw-bold d-none d-md-block' style={{ backgroundColor: '#888DD8', border: 'none', color:"#f1f2ff" }}>
             Talk to agust
           </button>
         </div>

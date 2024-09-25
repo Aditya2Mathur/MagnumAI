@@ -5,6 +5,7 @@ import feature3_2 from "./assets/feature3_2.png"
 import feature3_3 from "./assets/feature3_3.png"
 import plus from './assets/plus.svg'
 import minus from './assets/minus.svg'
+import "./Feature1.css"
 
 export default function Feature() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -53,9 +54,9 @@ export default function Feature() {
         <div className="col-md-12 col-lg-6 col-sm-12 p-0">
           <div className="row mt-5 ">
             <div className="col-sm-12 col-md-12">
-              <h3>Upload Medical Reports for Instant Analysis and Advice</h3>
+              <h3>Upload <span className='color-5'>Medical Reports</span> for Instant Analysis and Advice</h3>
               <p className="mt-4">
-              Easily upload your medical reports and get quick, AI-driven insights. Our system analyzes your reports and answers any questions you have, helping you understand your health better and guiding you toward the right treatment.
+              Easily <span className='color-5'>upload your medical reports</span> and get quick, AI-driven insights. Our system analyzes your reports and answers any questions you have, helping you <span className='color-5'>understand your health better</span> and guiding you toward the right treatment.
               </p>
             </div>
             <div className="col-md-12 col-lg-12 mt-3">

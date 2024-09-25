@@ -14,9 +14,9 @@ const Footer = () => {
             {/* Grid row */}
             <div className="row">
               {/* Grid column */}
-              <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <div className="col-md-3  col-lg-3 col-xl-3 mx-auto mt-3">
                 <h6 className="text-uppercase mb-4 font-weight-bold">MagnumAI</h6>
-                <p className='text-start'>
+                <p className='text-start color-4'>
                   Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
                   consectetur adipisicing elit.
                 </p>
@@ -27,20 +27,20 @@ const Footer = () => {
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 className="text-uppercase mb-4 font-weight-bold">Products</h6>
                 <p>
-                  <a href="#!" className="color-3">Update</a>
+                  <a href="#!" className="color-4">Update</a>
                 </p>
                 <p>
-                  <a href="#!" className="color-3">Contact</a>
+                  <a href="#!" className="color-4">Contact</a>
                 </p>
               </div>
               <hr className="w-100 clearfix d-md-none" />
               {/* Grid column */}
-              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto">
-                <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                <p><FaHome className="mr-3" /> New York, NY 10012, US</p>
-                <p><FaEnvelope className="mr-3" /> info@gmail.com</p>
-                <p><FaPhone className="mr-3" /> + 01 234 567 88</p>
-                <p><FaPrint className="mr-3" /> + 01 234 567 89</p>
+              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto ">
+                <h6 className="text-uppercase mb-4 font-weight-bold color-4">Contact</h6>
+                <p className='color-4'><FaHome className="mr-3" /> New York, NY 10012, US</p>
+                <p className='color-4'><FaEnvelope className="mr-3" /> info@gmail.com</p>
+                <p className='color-4'><FaPhone className="mr-3" /> + 01 234 567 88</p>
+                <p className='color-4'><FaPrint className="mr-3" /> + 01 234 567 89</p>
               </div>
               {/* Grid column */}
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
@@ -69,9 +69,9 @@ const Footer = () => {
           </section>
         </div>
         {/* Copyright */}
-        <div className="color-3 text-center p-3" style={{ background: "#20232A"}}>
+        <div className="color-4 text-center p-3" style={{ background: "#20232A"}}>
           © 2020 Copyright:
-          <a className="color-3" href="https://mdbootstrap.com/">MagnumAI</a>
+          <a className="color-4" href="https://mdbootstrap.com/">MagnumAI</a>
         </div>
       </footer>
     </div>
