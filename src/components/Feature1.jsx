@@ -1,29 +1,31 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Feature.css'
-import feature2 from "./assets/Feature1.png"
+import feature2 from "./assets/feature2.png"
+import feature2_2 from "./assets/feature2_1.png"
+import feature2_3 from "./assets/feature2_3.png"
 
 export default function Feature() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const images = [
     feature2,
-    'https://yellow.ai/wp-content/uploads/2024/06/healthcare-inline-img-2-2-1010x1024.webp',
-    'https://yellow.ai/wp-content/uploads/2024/06/healthcare-inline-img-2-3-1010x1024.webp',
+    feature2_2,
+    feature2_3,
   ];
 
   const faqs = [
     {
-      question: 'Appointment booking and rescheduling',
-      answer: 'Automate booking and updation of appointments and lab tests. Free up healthcare agents for high-value tasks.'
+      question: 'Voice Messaging for Easy Communication',
+      answer: 'Speak directly to our AI-powered system and share your health concerns without typing, making healthcare more accessible to everyone.'
     },
     {
-      question: 'Human-like voice interactions',
-      answer: 'Tackle interruptions with empathy using voice AI agents, adept in active listening. Transfer complex queries to live agents.'
+      question: 'Multilingual Voice Support',
+      answer: 'No matter what language you speak, our voice chat understands and responds to what you say, ensuring clear communication and personalised health advice.'
     },
     {
-      question: 'Secure billing and payments',
-      answer: 'Streamline invoicing, billing, and reimbursements with smooth integration with existing payment solutions.'
+      question: 'Designed for Rural Communities',
+      answer: 'This facility caters to the needs of people in rural areas, and provides a simple and effective way to get medical assistance without the need for typing or formal education.'
     },
   ];
 
@@ -51,10 +53,9 @@ export default function Feature() {
         <div className="col-md-12 col-lg-6 col-sm-12 p-0">
           <div className="row f-reverse m-auto" >
             <div className="col-sm-12 col-md-12">
-              <h2>Boost healthcare support efficiency with human-like empathy</h2>
+              <h2>Voice Chat: Speak Your Health Concerns with Ease</h2>
               <p className="mt-4">
-                Make high query volume handling effortless: Self-serve 90% of FAQs with accurate resolutions (having 1% hallucinations). 
-                Personalize interactions in 135+ languages.
+              Our voice chat feature allows you to communicate your health issues via voice messages in any language. Designed specifically for people who may have trouble writing, it ensures that everyone, including people in rural areas, can access quality healthcare advice.
               </p>
             </div>
             <div className="col-md-12 col-lg-12 mt-3">

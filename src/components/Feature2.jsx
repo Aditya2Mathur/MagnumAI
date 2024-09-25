@@ -1,28 +1,30 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import feature2 from "./assets/Feature1.png"
+import feature3 from "./assets/feature3.png"
+import feature3_2 from "./assets/feature3_2.png"
+import feature3_3 from "./assets/feature3_3.png"
 
 export default function Feature() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const images = [
-    feature2,
-    'https://yellow.ai/wp-content/uploads/2024/06/healthcare-inline-img-3-2-1010x1024.webp',
-    'https://yellow.ai/wp-content/uploads/2024/06/healthcare-inline-img-3-3-1010x1024.webp',
+     feature3,
+     feature3_2,
+     feature3_3,
   ];
 
   const faqs = [
     {
-      question: 'Appointment booking and rescheduling',
-      answer: 'Automate booking and updation of appointments and lab tests. Free up healthcare agents for high-value tasks.'
+      question: 'Fast and Accurate Report Analysis',
+      answer: 'Upload your reports for quick analysis. Our AI provides clear explanations, helping you understand complex medical details in simple terms.'
     },
     {
-      question: 'Human-like voice interactions',
-      answer: 'Tackle interruptions with empathy using voice AI agents, adept in active listening. Transfer complex queries to live agents.'
+      question: 'Personalized Health Advice',
+      answer: "Based on your reports, receive tailored health advice and treatment recommendations, ensuring you're on the right path to recovery."
     },
     {
-      question: 'Secure billing and payments',
-      answer: 'Streamline invoicing, billing, and reimbursements with smooth integration with existing payment solutions.'
+      question: 'Ask Questions About Your Reports',
+      answer: 'Got questions? Our system allows you to ask anything related to your reports, giving you the confidence and clarity you need to take control of your health.'
     },
   ];
 
@@ -49,10 +51,9 @@ export default function Feature() {
         <div className="col-md-12 col-lg-6 col-sm-12 p-0">
           <div className="row mt-5 ">
             <div className="col-sm-12 col-md-12">
-              <h2>Boost healthcare support efficiency with human-like empathy</h2>
+              <h2>Upload Medical Reports for Instant Analysis and Advice</h2>
               <p className="mt-4">
-                Make high query volume handling effortless: Self-serve 90% of FAQs with accurate resolutions (having 1% hallucinations). 
-                Personalize interactions in 135+ languages.
+              Easily upload your medical reports and get quick, AI-driven insights. Our system analyzes your reports and answers any questions you have, helping you understand your health better and guiding you toward the right treatment.
               </p>
             </div>
             <div className="col-md-12 col-lg-12 mt-3">
