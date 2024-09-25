@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import feature4 from "./assets/feature4.png"
 import feature4_2 from "./assets/feature4_2.png"
 import feature4_3 from "./assets/feature4_3.png"
+import plus from './assets/plus.svg'
+import minus from './assets/minus.svg'
 
 export default function Feature() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -36,11 +38,11 @@ export default function Feature() {
     <div className="container-fluid mt-5 p-5 m-0">
       <div className="row g-0">
 
-        {/* Left Column (Image) - Swapped to top on small screens */}
-        <div className="col-sm-12 col-lg-6 d-flex  align-items-start">
+        {/* Left Column (Image) - Swapped to bottom on md, lg screens */}
+        <div className="col-sm-12 col-lg-6 d-flex align-items-start order-lg-2 order-md-2">
           <div className="col-md-12 col-lg-12">
-            <img 
-              src={activeIndex !== null ? images[activeIndex] : images[0]} 
+            <img
+              src={activeIndex !== null ? images[activeIndex] : images[0]}
               alt="Feature"
               className="img-fluid"
               style={{ maxWidth: '100%', maxHeight: 'auto' }}
@@ -48,27 +50,27 @@ export default function Feature() {
           </div>
         </div>
 
-        {/* Right Column (Text) - Swapped to bottom on small screens */}
-        <div className="col-md-12 col-lg-6 col-sm-12 p-0">
+        {/* Right Column (Text) - Swapped to top on md, lg screens */}
+        <div className="col-md-12 col-lg-6 col-sm-12 p-0 order-lg-1 order-md-1">
           <div className="row f-reverse m-auto">
             <div className="col-sm-12 col-md-12">
               <h3>Track Your Meals with a Simple Photo</h3>
               <p className="mt-4">
-              Snap a photo of your meal, upload it, and get instant feedback on what you're eating. Our AI helps you understand your food’s nutritional value, offering personalized advice for healthier eating habits.
+                Snap a photo of your meal, upload it, and get instant feedback on what you're eating. Our AI helps you understand your food’s nutritional value, offering personalized advice for healthier eating habits.
               </p>
             </div>
             <div className="col-md-12 col-lg-12 mt-3">
               {faqs.map((faq, index) => (
                 <div key={index} className="mb-2 bg-light rounded-3 p-2">
-                  <button 
-                    className="btn btn-outline-light text-dark d-flex align-items-center w-100 text-start fs-6 fw-bold" 
+                  <button
+                    className="btn btn-outline-light text-dark d-flex align-items-center w-100 text-start fs-6 fw-bold"
                     onClick={() => toggleText(index)}
                   >
-                    <div className="d-flex align-items-center my-2" style={{border: 'none'}}>
+                    <div className="d-flex align-items-center my-2" style={{ border: 'none' }}>
                       <img
-                        src={activeIndex === index 
-                          ? 'https://cdn-icons-png.flaticon.com/512/262/262039.png' 
-                          : 'https://cdn-icons-png.flaticon.com/128/3024/3024515.png'}
+                        src={activeIndex === index
+                          ? minus
+                          : plus}
                         alt={activeIndex === index ? 'Minus icon' : 'Plus icon'}
                         style={{ width: '24px', height: '24px', marginRight: '10px' }}
                       />
@@ -76,7 +78,7 @@ export default function Feature() {
                     </div>
                   </button>
                   {activeIndex === index && (
-                    <p className="faq-answer ms-5 text-sm-start">{faq.answer}</p> 
+                    <p className="faq-answer ms-5 text-sm-start">{faq.answer}</p>
                   )}
                 </div>
               ))}

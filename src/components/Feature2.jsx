@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import feature3 from "./assets/feature3.png"
 import feature3_2 from "./assets/feature3_2.png"
 import feature3_3 from "./assets/feature3_3.png"
+import plus from './assets/plus.svg'
+import minus from './assets/minus.svg'
 
 export default function Feature() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -33,7 +35,7 @@ export default function Feature() {
   };
 
   return (
-    <div className="row p-0 my-5 py-5" style={{background: "linear-gradient(180deg, rgba(99,102,241,1) 0%, rgba(165,180,252,1) 100%"}}>
+    <div className="row p-0 my-5 py-5" style={{background: "#F1F2FF"}}>
       <div className="row g-0">
         {/* Left Column */}
         <div className="col-sm-12 col-lg-6 d-flex  align-items-start">
@@ -66,8 +68,8 @@ export default function Feature() {
                     <div className="d-flex align-items-center my-2 text-dark" style={{border: 'none'}}>
                       <img
                         src={activeIndex === index 
-                          ? 'https://cdn-icons-png.flaticon.com/512/262/262039.png' 
-                          : 'https://cdn-icons-png.flaticon.com/128/3024/3024515.png'}
+                          ? minus 
+                          : plus}
                         alt={activeIndex === index ? 'Minus icon' : 'Plus icon'}
                         style={{ width: '24px', height: '24px', marginRight: '10px' }}
                       />

@@ -4,6 +4,8 @@ import './Feature.css'
 import feature2 from "./assets/feature2.png"
 import feature2_2 from "./assets/feature2_1.png"
 import feature2_3 from "./assets/feature2_3.png"
+import plus from './assets/plus.svg'
+import minus from './assets/minus.svg'
 
 export default function Feature() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -35,13 +37,13 @@ export default function Feature() {
 
   return (
     <div className="container-fluid my-5 py-5" >
-      <div className="row g-0" >
+      <div className="row g-0 d" >
 
-        {/* Left Column (Image) - Swapped to top on small screens */}
-        <div className="col-sm-12 col-lg-6 d-flex  align-items-start" >
+        {/* Left Column (Image) - Swapped to bottom on md and lg screens */}
+        <div className="col-sm-12 col-lg-6 d-flex align-items-start order-lg-2 order-md-2" >
           <div className="col-md-12 col-lg-12">
-            <img 
-              src={activeIndex !== null ? images[activeIndex] : images[0]} 
+            <img
+              src={activeIndex !== null ? images[activeIndex] : images[0]}
               alt="Feature"
               className="img-fluid"
               style={{ maxWidth: '100%', maxHeight: 'auto' }}
@@ -49,27 +51,27 @@ export default function Feature() {
           </div>
         </div>
 
-        {/* Right Column (Text) - Swapped to bottom on small screens */}
-        <div className="col-md-12 col-lg-6 col-sm-12 p-0">
-          <div className="row f-reverse m-auto" >
+        {/* Right Column (Text) - Swapped to top on md and lg screens */}
+        <div className="col-md-12 col-lg-6 col-sm-12 p-0 order-lg-1 order-md-1">
+          <div className="row f-reverse m-auto " >
             <div className="col-sm-12 col-md-12">
               <h3>Voice Chat: Speak Your Health Concerns with Ease</h3>
               <p className="mt-4">
-              Our voice chat feature allows you to communicate your health issues via voice messages in any language. Designed specifically for people who may have trouble writing, it ensures that everyone, including people in rural areas, can access quality healthcare advice.
+                Our voice chat feature allows you to communicate your health issues via voice messages in any language. Designed specifically for people who may have trouble writing, it ensures that everyone, including people in rural areas, can access quality healthcare advice.
               </p>
             </div>
             <div className="col-md-12 col-lg-12 mt-3">
               {faqs.map((faq, index) => (
                 <div key={index} className="mb-2 bg-light rounded-3 p-2">
-                  <button 
-                    className="btn btn-outline-light d-flex align-items-center w-100 text-start fs-6 fw-bold" 
+                  <button
+                    className="btn btn-outline-light d-flex align-items-center w-100 text-start fs-6 fw-bold"
                     onClick={() => toggleText(index)}
                   >
-                    <div className="d-flex align-items-center my-2 text-dark" style={{border: 'none'}}>
+                    <div className="d-flex align-items-center my-2 text-dark" style={{ border: 'none' }}>
                       <img
-                        src={activeIndex === index 
-                          ? 'https://cdn-icons-png.flaticon.com/512/262/262039.png' 
-                          : 'https://cdn-icons-png.flaticon.com/128/3024/3024515.png'}
+                        src={activeIndex === index
+                          ? minus
+                          : plus}
                         alt={activeIndex === index ? 'Minus icon' : 'Plus icon'}
                         style={{ width: '24px', height: '24px', marginRight: '10px' }}
                       />
@@ -77,7 +79,7 @@ export default function Feature() {
                     </div>
                   </button>
                   {activeIndex === index && (
-                    <p className="faq-answer ms-5 text-sm-start">{faq.answer}</p> 
+                    <p className="faq-answer ms-5 text-sm-start">{faq.answer}</p>
                   )}
                 </div>
               ))}

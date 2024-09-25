@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <div className="container-fluid mt-5 p-0" >
       {/* Footer */}
-      <footer className="text-center text-lg-start text-white" style={{background: "linear-gradient(180deg, rgba(99,102,241,1) 0%, rgba(165,180,252,1) 100%" }}>
+      <footer className="text-center color-4 text-lg-start" style={{background: "#20232a" }}>
         {/* Grid container */}
-        <div className="container p-4 pb-0">
+        <div className="container p-5 pb-0">
           {/* Section: Links */}
           <section>
             {/* Grid row */}
@@ -27,15 +27,15 @@ const Footer = () => {
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 className="text-uppercase mb-4 font-weight-bold">Products</h6>
                 <p>
-                  <a href="#!" className="text-white">BrandFlow</a>
+                  <a href="#!" className="color-3">Update</a>
                 </p>
                 <p>
-                  <a href="#!" className="text-white">Bootstrap Angular</a>
+                  <a href="#!" className="color-3">Contact</a>
                 </p>
               </div>
               <hr className="w-100 clearfix d-md-none" />
               {/* Grid column */}
-              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto">
                 <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
                 <p><FaHome className="mr-3" /> New York, NY 10012, US</p>
                 <p><FaEnvelope className="mr-3" /> info@gmail.com</p>
@@ -69,9 +69,9 @@ const Footer = () => {
           </section>
         </div>
         {/* Copyright */}
-        <div className="text-center p-3" style={{ background: "rgba(165,180,252)"}}>
+        <div className="color-3 text-center p-3" style={{ background: "#20232A"}}>
           © 2020 Copyright:
-          <a className="text-white" href="https://mdbootstrap.com/">MagnumAI</a>
+          <a className="color-3" href="https://mdbootstrap.com/">MagnumAI</a>
         </div>
       </footer>
     </div>

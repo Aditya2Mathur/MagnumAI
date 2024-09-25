@@ -10,7 +10,7 @@ export default function Home() {
   const handleVideoTap = () => {
     if (videoRef.current) {
       if (videoRef.current.paused) {
-        videoRef.current.play();
+        videoRef.current.play();  
       } else {
         videoRef.current.pause();
       }
@@ -24,10 +24,10 @@ export default function Home() {
           <div className="row align-items-center" style={{ marginTop: '50px'}}>
             {/* Left Column */}
             <div className="col-md-12 text-center ">
-              <h1 className="hero-title text-white">Transform Healthcare with AI-Powered Solutions</h1>
+              <h1 className="hero-title">Transform Healthcare with <span className='color-5'> AI-Powered</span>  Solutions</h1>
               
-              <p className="hero-subtitle text-white">
-              Improve patient care, streamline operations, and boost efficiency with AI-driven technology
+              <p className="hero-subtitle">
+              Improve patient care, streamline operations, and <span className='color-5'>boost efficiency</span> with AI-driven technology
               </p>
             </div>
           </div>
