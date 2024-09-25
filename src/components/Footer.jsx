@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaHome, FaEnvelope, FaPhone, FaPrint, FaFacebookF, FaTwitter, FaGoogle, FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa'; // Import icons from react-icons
 import './Footer.css'; // Add your CSS or Bootstrap import here
+import logo from "./assets/Magnumlogo.png"
 
 const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
             <div className="row">
               {/* Grid column */}
               <div className="col-md-3  col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 font-weight-bold">MagnumAI</h6>
+                <img src={logo} alt="" className='mb-2' />
                 <p className='text-start color-4'>
                   Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
                   consectetur adipisicing elit.

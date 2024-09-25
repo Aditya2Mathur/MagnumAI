@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import feature3 from "./assets/feature3.png"
-import feature3_2 from "./assets/feature3_2.png"
-import feature3_3 from "./assets/feature3_3.png"
+import feature3 from "./assets/feature3.webp"
+import feature3_2 from "./assets/feature3_2.webp"
+import feature3_3 from "./assets/feature3_3.webp"
 import plus from './assets/plus.svg'
 import minus from './assets/minus.svg'
 import "./Feature1.css"

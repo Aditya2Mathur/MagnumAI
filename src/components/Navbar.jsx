@@ -10,8 +10,8 @@ export default function MyComponent() {
         <div className="col-sm-4 d-flex justify-content-center align-items-center">
           <img src={Magnumlogo} alt="Magnum Logo" style={{ width: '150px' }} />
         </div>
-        <div className="col-sm-4 d-flex justify-content-center align-items-center text-sm-center text-md-end">
-          <span className="d-block about text-white">About</span>
+        <div className="col-sm-4 d-flex justify-content-center align-items-center text-sm-end text-md-end">
+          <span className="d-block about" style={ {color:'#888DD8'} }>About</span>
         </div>
         {/* Hide this column on screen sizes below 576px */}
         <div className="col-sm-4 d-none d-sm-flex justify-content-center align-items-center">

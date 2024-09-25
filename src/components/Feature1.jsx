@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Feature.css'
-import feature2 from "./assets/feature2.png"
-import feature2_2 from "./assets/feature2_1.png"
-import feature2_3 from "./assets/feature2_3.png"
+import feature2 from "./assets/feature2.webp"
+import feature2_2 from "./assets/feature2_1.webp"
+import feature2_3 from "./assets/feature2_3.webp"
 import plus from './assets/plus.svg'
 import minus from './assets/minus.svg'
 
