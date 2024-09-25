@@ -33,7 +33,7 @@ export default function Feature() {
   };
 
   return (
-    <div className="container-fluid mt-5 p-5 m-0" style={{background: "linear-gradient(180deg, rgba(99,102,241,1) 0%, rgba(165,180,252,1) 100%"}}>
+    <div className="container-fluid mt-5 p-5 m-0">
       <div className="row g-0">
 
         {/* Left Column (Image) - Swapped to top on small screens */}
@@ -52,14 +52,14 @@ export default function Feature() {
         <div className="col-md-12 col-lg-6 col-sm-12 p-0">
           <div className="row f-reverse m-auto">
             <div className="col-sm-12 col-md-12">
-              <h2>Track Your Meals with a Simple Photo</h2>
+              <h3>Track Your Meals with a Simple Photo</h3>
               <p className="mt-4">
               Snap a photo of your meal, upload it, and get instant feedback on what you're eating. Our AI helps you understand your food’s nutritional value, offering personalized advice for healthier eating habits.
               </p>
             </div>
             <div className="col-md-12 col-lg-12 mt-3">
               {faqs.map((faq, index) => (
-                <div key={index} className="mb-2">
+                <div key={index} className="mb-2 bg-light rounded-3 p-2">
                   <button 
                     className="btn btn-outline-light text-dark d-flex align-items-center w-100 text-start fs-6 fw-bold" 
                     onClick={() => toggleText(index)}

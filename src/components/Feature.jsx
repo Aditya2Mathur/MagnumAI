@@ -33,9 +33,9 @@ export default function Feature() {
   };
 
   return (
-    <div className="row p-0 m-0 mt-5 " >
-      <div className="row g-0 ">
-      <h2 className='text-center'>Here's how Magnum AI is Transforming</h2>
+    <div className="row my-5 py-5" style={{background: "linear-gradient(180deg, rgba(99,102,241,1) 0%, rgba(165,180,252,1) 100%"}} >
+      <div className="row g-0 mt-5 ">
+      <h2 className='text-center '>Here's how Magnum AI is Transforming</h2>
       <h2 className='text-center'><strong>Your Healthcare Experience Today</strong></h2>
         {/* Left Column */}
         <div className="col-sm-12 col-lg-6 d-flex  align-items-start">
@@ -60,12 +60,12 @@ export default function Feature() {
             </div>
             <div className="col-md-12 col-lg-12 mt-3">
               {faqs.map((faq, index) => (
-                <div key={index} className="mb-2">
+                <div key={index} className="mb-2 bg-light rounded-3 p-2">
                   <button 
                     className="btn btn-outline-light d-flex align-items-center w-100 text-start fs-6 fw-bold" 
                     onClick={() => toggleText(index)}
                   >
-                    <div className="d-flex align-items-center my-2 text-dark" style={{border: 'none'}}>
+                    <div className="d-flex align-items-center my-2 text-dark " style={{border: 'none'}}>
                       <img
                         src={activeIndex === index 
                           ? 'https://cdn-icons-png.flaticon.com/512/262/262039.png' 

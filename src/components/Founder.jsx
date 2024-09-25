@@ -3,13 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const ContentSwitcher = () => {
   // Array of content with headings, text, and images
   return (
-    <div style={{ marginTop: '100px', backgroundColor: '#A5B4FC' }} >
+    <div style={{ marginTop: '100px',background: "linear-gradient(180deg, rgba(99,102,241,1) 0%, rgba(165,180,252,1) 100%"}} >
       <div className="">
         <div className="row p-0 m-0">
           <div className="row g-0 d-flex flex-sm-row-reverse flex-md-row" >
             {/* left */}
             <div className="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center align-items-end" style={{height: '400px'}}> 
-              <div className="row fw-bold text-start" style={{ color: '#5c42fc', fontSize: '16px' }}>
+              <div className="row fw-bold text-start text-light" style={{ color: '#5c42fc', fontSize: '16px' }}>
                 <p>Goode Doctor Technology</p> {/* Dynamic heading */}
               </div>
               <div className="row text-align-justify text-start">

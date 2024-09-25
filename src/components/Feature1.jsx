@@ -34,7 +34,7 @@ export default function Feature() {
   };
 
   return (
-    <div className="container-fluid mt-5 p-5 m-0" style={{background: "linear-gradient(180deg, rgba(99,102,241,1) 0%, rgba(165,180,252,1) 100%"}}>
+    <div className="container-fluid my-5 py-5" >
       <div className="row g-0" >
 
         {/* Left Column (Image) - Swapped to top on small screens */}
@@ -53,14 +53,14 @@ export default function Feature() {
         <div className="col-md-12 col-lg-6 col-sm-12 p-0">
           <div className="row f-reverse m-auto" >
             <div className="col-sm-12 col-md-12">
-              <h2>Voice Chat: Speak Your Health Concerns with Ease</h2>
+              <h3>Voice Chat: Speak Your Health Concerns with Ease</h3>
               <p className="mt-4">
               Our voice chat feature allows you to communicate your health issues via voice messages in any language. Designed specifically for people who may have trouble writing, it ensures that everyone, including people in rural areas, can access quality healthcare advice.
               </p>
             </div>
             <div className="col-md-12 col-lg-12 mt-3">
               {faqs.map((faq, index) => (
-                <div key={index} className="mb-2">
+                <div key={index} className="mb-2 bg-light rounded-3 p-2">
                   <button 
                     className="btn btn-outline-light d-flex align-items-center w-100 text-start fs-6 fw-bold" 
                     onClick={() => toggleText(index)}

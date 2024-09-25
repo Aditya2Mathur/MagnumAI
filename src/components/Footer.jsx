@@ -4,9 +4,9 @@ import './Footer.css'; // Add your CSS or Bootstrap import here
 
 const Footer = () => {
   return (
-    <div className="container-fluid mt-5 p-0">
+    <div className="container-fluid mt-5 p-0" >
       {/* Footer */}
-      <footer className="text-center text-lg-start text-white" style={{ backgroundColor: '#929fba' }}>
+      <footer className="text-center text-lg-start text-white" style={{background: "linear-gradient(180deg, rgba(99,102,241,1) 0%, rgba(165,180,252,1) 100%" }}>
         {/* Grid container */}
         <div className="container p-4 pb-0">
           {/* Section: Links */}
@@ -69,7 +69,7 @@ const Footer = () => {
           </section>
         </div>
         {/* Copyright */}
-        <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+        <div className="text-center p-3" style={{ background: "rgba(165,180,252)"}}>
           © 2020 Copyright:
           <a className="text-white" href="https://mdbootstrap.com/">MagnumAI</a>
         </div>

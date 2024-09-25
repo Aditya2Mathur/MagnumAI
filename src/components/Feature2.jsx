@@ -33,7 +33,7 @@ export default function Feature() {
   };
 
   return (
-    <div className="row p-0 m-0" >
+    <div className="row p-0 my-5 py-5" style={{background: "linear-gradient(180deg, rgba(99,102,241,1) 0%, rgba(165,180,252,1) 100%"}}>
       <div className="row g-0">
         {/* Left Column */}
         <div className="col-sm-12 col-lg-6 d-flex  align-items-start">
@@ -51,14 +51,14 @@ export default function Feature() {
         <div className="col-md-12 col-lg-6 col-sm-12 p-0">
           <div className="row mt-5 ">
             <div className="col-sm-12 col-md-12">
-              <h2>Upload Medical Reports for Instant Analysis and Advice</h2>
+              <h3>Upload Medical Reports for Instant Analysis and Advice</h3>
               <p className="mt-4">
               Easily upload your medical reports and get quick, AI-driven insights. Our system analyzes your reports and answers any questions you have, helping you understand your health better and guiding you toward the right treatment.
               </p>
             </div>
             <div className="col-md-12 col-lg-12 mt-3">
               {faqs.map((faq, index) => (
-                <div key={index} className="mb-2">
+                <div key={index} className="mb-2 bg-light rounded-3 p-2">
                   <button 
                     className="btn btn-outline-light d-flex align-items-center w-100 text-start fs-6 fw-bold" 
                     onClick={() => toggleText(index)}

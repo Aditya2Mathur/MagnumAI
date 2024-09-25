@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <CloudinaryContext cloudName="dcx4eh4kv">
-      <div className="container-fluid col-sm-12 home-content" style={{ padding:'20px', background: "linear-gradient(180deg, rgba(99,102,241,1) 0%, rgba(165,180,252,1) 100%)"}}>
+      <div className="container-fluid col-sm-12 home-content" style={{ padding:'20px', }}>
         <div className="col-sm-10" style={{ margin: 'auto' }}>
           <div className="row align-items-center" style={{ marginTop: '50px'}}>
             {/* Left Column */}

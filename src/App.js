@@ -9,12 +9,14 @@ import Feature3 from './components/Feature3';
 import Founder from './components/Founder';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
-
-
+import ParticlesComponent from './components/Particles'
 
 function App() {
   return (
     <div className="container-fluid p-0 m-0">
+      <div className="particles-container">
+        <ParticlesComponent id="particles"></ParticlesComponent>
+      </div>
       <Navbar/>
       <Home/>
       <Feature/>
@@ -24,7 +26,6 @@ function App() {
       <Founder/>
       <FAQ/>
       <Footer/>
-
     </div>
   );
 }

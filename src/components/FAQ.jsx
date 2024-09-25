@@ -27,7 +27,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="faq-container">
+    <div className="faq-container my-5">
       <h2 className="faq-heading">Frequently Asked Questions</h2>
       <div className="accordion">
         {faqData.map((faq, index) => (
