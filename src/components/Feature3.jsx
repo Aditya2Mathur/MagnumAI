@@ -1,27 +1,30 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import feature2 from "./assets/Feature1.png"
+import feature4 from "./assets/feature4.png"
+import feature4_2 from "./assets/feature4_2.png"
+import feature4_3 from "./assets/feature4_3.png"
+
 export default function Feature() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const images = [
-    feature2,
-    'https://yellow.ai/wp-content/uploads/2024/06/healthcare-inline-img-2-2-1010x1024.webp',
-    'https://yellow.ai/wp-content/uploads/2024/06/healthcare-inline-img-2-3-1010x1024.webp',
+    feature4,
+    feature4_2,
+    feature4_3,
   ];
 
   const faqs = [
     {
-      question: 'Appointment booking and rescheduling',
-      answer: 'Automate booking and updation of appointments and lab tests. Free up healthcare agents for high-value tasks.'
+      question: 'Quick Meal Tracking',
+      answer: 'Just take a photo of your food, and our AI will analyze it to give you an instant breakdown of calories, nutrients, and more.'
     },
     {
-      question: 'Human-like voice interactions',
-      answer: 'Tackle interruptions with empathy using voice AI agents, adept in active listening. Transfer complex queries to live agents.'
+      question: 'Personalized Nutrition Advice',
+      answer: 'Based on your meal, receive tailored suggestions to improve your diet, ensuring you’re meeting your health goals.'
     },
     {
-      question: 'Secure billing and payments',
-      answer: 'Streamline invoicing, billing, and reimbursements with smooth integration with existing payment solutions.'
+      question: 'Ask Anything About Your Meal',
+      answer: 'Curious about your food choices? Ask our system anything—from portion sizes to healthier alternatives—and get expert guidance to make better eating decisions.'
     },
   ];
 
@@ -49,10 +52,9 @@ export default function Feature() {
         <div className="col-md-12 col-lg-6 col-sm-12 p-0">
           <div className="row f-reverse m-auto">
             <div className="col-sm-12 col-md-12">
-              <h2>Boost healthcare support efficiency with human-like empathy</h2>
+              <h2>Track Your Meals with a Simple Photo</h2>
               <p className="mt-4">
-                Make high query volume handling effortless: Self-serve 90% of FAQs with accurate resolutions (having 1% hallucinations). 
-                Personalize interactions in 135+ languages.
+              Snap a photo of your meal, upload it, and get instant feedback on what you're eating. Our AI helps you understand your food’s nutritional value, offering personalized advice for healthier eating habits.
               </p>
             </div>
             <div className="col-md-12 col-lg-12 mt-3">
